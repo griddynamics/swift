@@ -5,6 +5,7 @@
 %endif
 
 Name:             openstack-swift
+Epoch:          1
 Version:	1.4.3
 Release:	20110823.347%{?dist}
 Summary:          OpenStack Object Storage (swift)
@@ -65,7 +66,7 @@ expensive equipment.
 Summary:          A swift account server
 Group:            Applications/System
 
-Requires:         %{name} = %{version}-%{release}
+Requires    %{name} = %{epoch}:%{version}-%{release}
 
 %description      account
 OpenStack Object Storage (swift) aggregates commodity servers to work together
@@ -77,7 +78,7 @@ This package contains the %{name} account server.
 Summary:          A swift container server
 Group:            Applications/System
 
-Requires:         %{name} = %{version}-%{release}
+Requires    %{name} = %{epoch}:%{version}-%{release}
 
 %description      container
 OpenStack Object Storage (swift) aggregates commodity servers to work together
@@ -89,7 +90,7 @@ This package contains the %{name} container server.
 Summary:          A swift object server
 Group:            Applications/System
 
-Requires:         %{name} = %{version}-%{release}
+Requires    %{name} = %{epoch}:%{version}-%{release}
 
 %description      object
 OpenStack Object Storage (swift) aggregates commodity servers to work together
@@ -101,7 +102,7 @@ This package contains the %{name} object server.
 Summary:          A swift proxy server
 Group:            Applications/System
 
-Requires:         %{name} = %{version}-%{release}
+Requires    %{name} = %{epoch}:%{version}-%{release}
 
 %description      proxy
 OpenStack Object Storage (swift) aggregates commodity servers to work together

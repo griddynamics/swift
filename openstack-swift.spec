@@ -5,6 +5,7 @@
 %endif
 
 Name:             openstack-swift
+Epoch:          1
 Version:	1.4.3
 Release:	20110823.347%{?dist}
 Summary:          OpenStack Object Storage (swift)
